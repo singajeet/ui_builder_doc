@@ -1,0 +1,699 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ui_builder.core.package package &#8212; ui_builder 0.0.5 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ui-builder-core-package-package">
+<h1>ui_builder.core.package package<a class="headerlink" href="#ui-builder-core-package-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ui_builder.core.package.package_commands">
+<span id="ui-builder-core-package-package-commands-module"></span><h2>ui_builder.core.package.package_commands module<a class="headerlink" href="#module-ui_builder.core.package.package_commands" title="Permalink to this headline">¶</a></h2>
+<p>package_commands.py
+Contains commands for performing package related tasks</p>
+<dl class="class">
+<dt id="ui_builder.core.package.package_commands.PackageCommands">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.package_commands.</code><code class="descname">PackageCommands</code><span class="sig-paren">(</span><em>pkg_manager</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for PackageCommand.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.ACTIVATE">
+<code class="descname">ACTIVATE</code><em class="property"> = 'activate'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.ACTIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.DEACTIVATE">
+<code class="descname">DEACTIVATE</code><em class="property"> = 'deactivate'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.DEACTIVATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.DOWNLOAD">
+<code class="descname">DOWNLOAD</code><em class="property"> = 'download'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.DOWNLOAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.FIND">
+<code class="descname">FIND</code><em class="property"> = 'find'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.FIND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.INSTALL">
+<code class="descname">INSTALL</code><em class="property"> = 'install'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.INSTALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.LIST">
+<code class="descname">LIST</code><em class="property"> = 'list'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.LIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.LOAD">
+<code class="descname">LOAD</code><em class="property"> = 'load'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.LOAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.SHOW">
+<code class="descname">SHOW</code><em class="property"> = 'show'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.SHOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.UNINSTALL">
+<code class="descname">UNINSTALL</code><em class="property"> = 'uninstall'</em><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.UNINSTALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.activate_packages_command">
+<code class="descname">activate_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.activate_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for activate_packages_command
+:<a href="#id1"><span class="problematic" id="id2">*</span></a>arg: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.deactivate_packages_command">
+<code class="descname">deactivate_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.deactivate_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for deactivate_packages_command
+:<a href="#id3"><span class="problematic" id="id4">*</span></a>arg: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.download_package_command">
+<code class="descname">download_package_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.download_package_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for download_package_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">*argarg:</th><td class="field-body">TODO’‘</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.find_package_command">
+<code class="descname">find_package_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.find_package_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_package_command.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.install_packages_command">
+<code class="descname">install_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.install_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_packages_command.
+:arg1: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.list_packages_command">
+<code class="descname">list_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.list_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_packages_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">*argarg:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.load_packages_command">
+<code class="descname">load_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.load_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_packages_command.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.register_command">
+<code class="descname">register_command</code><span class="sig-paren">(</span><em>name</em>, <em>desc</em>, <em>action</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.register_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for register_commands.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.register_commands">
+<code class="descname">register_commands</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.register_commands" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.show_package_command">
+<code class="descname">show_package_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.show_package_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for show_package_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">*argarg:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.package_commands.PackageCommands.uninstall_packages_command">
+<code class="descname">uninstall_packages_command</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.package_commands.PackageCommands.uninstall_packages_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_packages_command.
+:arg1: TODO
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.package.service">
+<span id="ui-builder-core-package-service-module"></span><h2>ui_builder.core.package.service module<a class="headerlink" href="#module-ui_builder.core.package.service" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ui_builder.core.package.service.ArchiveManager">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">ArchiveManager</code><span class="sig-paren">(</span><em>conf_path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for ArchiveManager.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.ArchiveManager.archive_drop_location">
+<code class="descname">archive_drop_location</code><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager.archive_drop_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>The archive_drop_location property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.ArchiveManager.archive_file_list">
+<code class="descname">archive_file_list</code><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager.archive_file_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>The archive_file_list property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.ArchiveManager.is_package_available">
+<code class="descname">is_package_available</code><span class="sig-paren">(</span><em>pkg_file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager.is_package_available" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for is_package_available.
+:pkg_file_name: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.ArchiveManager.load_archive">
+<code class="descname">load_archive</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager.load_archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_archive.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.ArchiveManager.load_archives">
+<code class="descname">load_archives</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ArchiveManager.load_archives" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_archives.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.ComponentInfo">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">ComponentInfo</code><span class="sig-paren">(</span><em>name</em>, <em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ComponentInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Component.</p>
+<dl class="method">
+<dt id="ui_builder.core.package.service.ComponentInfo.load_details">
+<code class="descname">load_details</code><span class="sig-paren">(</span><em>comp_id</em>, <em>db_conn</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.ComponentInfo.load_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_details.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.PackageDownloader">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">PackageDownloader</code><span class="sig-paren">(</span><em>conf_path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for PackageDownloader.</p>
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageDownloader.download">
+<code class="descname">download</code><span class="sig-paren">(</span><em>src_name</em>, <em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for download.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageDownloader.find_package">
+<code class="descname">find_package</code><span class="sig-paren">(</span><em>src_name</em>, <em>pkg_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader.find_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_package.
+:src_name: TODO
+:pkg_name: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageDownloader.list_packages">
+<code class="descname">list_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader.list_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_packages.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageDownloader.list_packages_from_src">
+<code class="descname">list_packages_from_src</code><span class="sig-paren">(</span><em>source_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader.list_packages_from_src" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_packages_from_src.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Source_name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageDownloader.list_sources">
+<code class="descname">list_sources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageDownloader.list_sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_sources.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.PackageInfo">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">PackageInfo</code><span class="sig-paren">(</span><em>location=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Package.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInfo.config_file">
+<code class="descname">config_file</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.config_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>The config_file property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInfo.get_comp_name_list">
+<code class="descname">get_comp_name_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.get_comp_name_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_comp_name_list.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInfo.get_component">
+<code class="descname">get_component</code><span class="sig-paren">(</span><em>comp_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.get_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_component.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInfo.get_component_by_id">
+<code class="descname">get_component_by_id</code><span class="sig-paren">(</span><em>comp_id</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.get_component_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInfo.get_components">
+<code class="descname">get_components</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.get_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_components.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInfo.is_enabled">
+<code class="descname">is_enabled</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.is_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>The is_enabled property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInfo.is_installed">
+<code class="descname">is_installed</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.is_installed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The is_installed property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInfo.load_details">
+<code class="descname">load_details</code><span class="sig-paren">(</span><em>pkg_id</em>, <em>db_conn</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.load_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_details.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arg1:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInfo.location">
+<code class="descname">location</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInfo.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>The location property.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.PackageInstaller">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">PackageInstaller</code><span class="sig-paren">(</span><em>conf_path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for PackageInstaller.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInstaller.archive_files">
+<code class="descname">archive_files</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.archive_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>The archive_files property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInstaller.archive_manager">
+<code class="descname">archive_manager</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.archive_manager" title="Permalink to this definition">¶</a></dt>
+<dd><p>The archive_manager property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInstaller.install_package">
+<code class="descname">install_package</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.install_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_package.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInstaller.install_packages">
+<code class="descname">install_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.install_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_packages.
+:arg1: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageInstaller.pkg_install_location">
+<code class="descname">pkg_install_location</code><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.pkg_install_location" title="Permalink to this definition">¶</a></dt>
+<dd><p>The pkg_install_location property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageInstaller.uninstall_package">
+<code class="descname">uninstall_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageInstaller.uninstall_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for uninstall_packages.
+:<a href="#id11"><span class="problematic" id="id12">*</span></a>arg: TODO
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.PackageManager">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">PackageManager</code><span class="sig-paren">(</span><em>conf_path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.activate_package">
+<code class="descname">activate_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.activate_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for activate_package.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.activate_packages">
+<code class="descname">activate_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.activate_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for activate_packages.
+:arg1: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.deactivate_package">
+<code class="descname">deactivate_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.deactivate_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for deactivate_package.
+:package_id: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.deactivate_packages">
+<code class="descname">deactivate_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.deactivate_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for deactivate_packages.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.download_package">
+<code class="descname">download_package</code><span class="sig-paren">(</span><em>package_name</em>, <em>source_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.download_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for download_package.
+:pkg_nam: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.find_package">
+<code class="descname">find_package</code><span class="sig-paren">(</span><em>pkg_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.find_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_package.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Pkg_name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.install_package">
+<code class="descname">install_package</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.install_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_package.
+:arg1: TODO
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.install_packages">
+<code class="descname">install_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.install_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for install_packages.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.list_packages">
+<code class="descname">list_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.list_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_packages.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.list_sources">
+<code class="descname">list_sources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.list_sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list_sources.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.load_package">
+<code class="descname">load_package</code><span class="sig-paren">(</span><em>pkg_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.load_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_package.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.load_packages">
+<code class="descname">load_packages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.load_packages" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for load_packages.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageManager.packages_map">
+<code class="descname">packages_map</code><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.packages_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>The packages_map property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.package.service.PackageManager.packages_name_id_map">
+<code class="descname">packages_name_id_map</code><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.packages_name_id_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>The packages_name_id_map property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.show_package">
+<code class="descname">show_package</code><span class="sig-paren">(</span><em>pkg_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.show_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for show_package.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageManager.uninstall_package">
+<code class="descname">uninstall_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageManager.uninstall_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for uninstall_package.
+:package_name: TODO
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.package.service.PackageSource">
+<em class="property">class </em><code class="descclassname">ui_builder.core.package.service.</code><code class="descname">PackageSource</code><a class="headerlink" href="#ui_builder.core.package.service.PackageSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for PackageSource.</p>
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageSource.check_source">
+<code class="descname">check_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageSource.check_source" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for check_source.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageSource.download">
+<code class="descname">download</code><span class="sig-paren">(</span><em>pkg</em>, <em>to</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageSource.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for download.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">To:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageSource.find_package">
+<code class="descname">find_package</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageSource.find_package" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_package.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Package_name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageSource.list">
+<code class="descname">list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageSource.list" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for list.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.package.service.PackageSource.package_details">
+<code class="descname">package_details</code><span class="sig-paren">(</span><em>package_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.package.service.PackageSource.package_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for package_details.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Package_name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.package">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ui_builder.core.package" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ui_builder</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ajeet Singh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/ui_builder.core.package.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

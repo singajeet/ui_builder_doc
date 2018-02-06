@@ -1,0 +1,497 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ui_builder.core package &#8212; ui_builder 0.0.5 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ui-builder-core-package">
+<h1>ui_builder.core package<a class="headerlink" href="#ui-builder-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ui_builder.core.package.html">ui_builder.core.package package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.package.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.package.html#module-ui_builder.core.package.package_commands">ui_builder.core.package.package_commands module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.package.html#module-ui_builder.core.package.service">ui_builder.core.package.service module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.package.html#module-ui_builder.core.package">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_builder.core.parser.html">ui_builder.core.parser package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.parser.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.parser.html#module-ui_builder.core.parser.cmd_parser">ui_builder.core.parser.cmd_parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.parser.html#module-ui_builder.core.parser">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_builder.core.provider.html">ui_builder.core.provider package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.provider.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.provider.html#module-ui_builder.core.provider.commands">ui_builder.core.provider.commands module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.provider.html#module-ui_builder.core.provider.id_mgr">ui_builder.core.provider.id_mgr module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.provider.html#module-ui_builder.core.provider.tasks">ui_builder.core.provider.tasks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.provider.html#module-ui_builder.core.provider">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_builder.core.tests.html">ui_builder.core.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.tests.html#module-ui_builder.core.tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_builder.core.ui.html">ui_builder.core.ui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.ui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.ui.html#module-ui_builder.core.ui.models">ui_builder.core.ui.models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_builder.core.ui.html#module-ui_builder.core.ui">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ui_builder.core.components">
+<span id="ui-builder-core-components-module"></span><h2>ui_builder.core.components module<a class="headerlink" href="#module-ui_builder.core.components" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ui_builder.core.components.Component">
+<em class="property">class </em><code class="descclassname">ui_builder.core.components.</code><code class="descname">Component</code><a class="headerlink" href="#ui_builder.core.components.Component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Component.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.components.ComponentLoader">
+<em class="property">class </em><code class="descclassname">ui_builder.core.components.</code><code class="descname">ComponentLoader</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.components.ComponentLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">jinja2.loaders.BaseLoader</span></code></p>
+<p>Docstring for ComponentLoader.</p>
+<dl class="method">
+<dt id="ui_builder.core.components.ComponentLoader.get_source">
+<code class="descname">get_source</code><span class="sig-paren">(</span><em>environment</em>, <em>template</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.components.ComponentLoader.get_source" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_source.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Environment:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.constants">
+<span id="ui-builder-core-constants-module"></span><h2>ui_builder.core.constants module<a class="headerlink" href="#module-ui_builder.core.constants" title="Permalink to this headline">¶</a></h2>
+<p>constants.py
+Description:
+Constant variables definition to be uses application wide
+Author:
+Ajeet Singh</p>
+<dl class="class">
+<dt id="ui_builder.core.constants.Commands">
+<em class="property">class </em><code class="descclassname">ui_builder.core.constants.</code><code class="descname">Commands</code><a class="headerlink" href="#ui_builder.core.constants.Commands" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Commands.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.FAILED">
+<code class="descname">FAILED</code><em class="property"> = 1</em><a class="headerlink" href="#ui_builder.core.constants.Commands.FAILED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.INVALID_COMMAND">
+<code class="descname">INVALID_COMMAND</code><em class="property"> = 16</em><a class="headerlink" href="#ui_builder.core.constants.Commands.INVALID_COMMAND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.INVALID_COMMAND_OPTION">
+<code class="descname">INVALID_COMMAND_OPTION</code><em class="property"> = 8</em><a class="headerlink" href="#ui_builder.core.constants.Commands.INVALID_COMMAND_OPTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.INVALID_SUB_COMMAND">
+<code class="descname">INVALID_SUB_COMMAND</code><em class="property"> = 64</em><a class="headerlink" href="#ui_builder.core.constants.Commands.INVALID_SUB_COMMAND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.INVALID_SUB_COMMAND_OPTION">
+<code class="descname">INVALID_SUB_COMMAND_OPTION</code><em class="property"> = 32</em><a class="headerlink" href="#ui_builder.core.constants.Commands.INVALID_SUB_COMMAND_OPTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.SUCCESS">
+<code class="descname">SUCCESS</code><em class="property"> = 0</em><a class="headerlink" href="#ui_builder.core.constants.Commands.SUCCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.SUCCESS_WARNING">
+<code class="descname">SUCCESS_WARNING</code><em class="property"> = 2</em><a class="headerlink" href="#ui_builder.core.constants.Commands.SUCCESS_WARNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.constants.Commands.WARNING">
+<code class="descname">WARNING</code><em class="property"> = 4</em><a class="headerlink" href="#ui_builder.core.constants.Commands.WARNING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.features">
+<span id="ui-builder-core-features-module"></span><h2>ui_builder.core.features module<a class="headerlink" href="#module-ui_builder.core.features" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ui_builder.core.fields">
+<span id="ui-builder-core-fields-module"></span><h2>ui_builder.core.fields module<a class="headerlink" href="#module-ui_builder.core.fields" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ui_builder.core.fields.BooleanField">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">BooleanField</code><span class="sig-paren">(</span><em>name</em>, <em>required=True</em>, <em>default=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.BooleanField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.Field" title="ui_builder.core.fields.Field"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.Field</span></code></a></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.BooleanField.field_value">
+<code class="descname">field_value</code><a class="headerlink" href="#ui_builder.core.fields.BooleanField.field_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.CharField">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">CharField</code><span class="sig-paren">(</span><em>name</em>, <em>max_length=100</em>, <em>required=True</em>, <em>default=''</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.CharField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.Field" title="ui_builder.core.fields.Field"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.Field</span></code></a></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.CharField.field_value">
+<code class="descname">field_value</code><a class="headerlink" href="#ui_builder.core.fields.CharField.field_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.CharField.max_length">
+<code class="descname">max_length</code><a class="headerlink" href="#ui_builder.core.fields.CharField.max_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.Field">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">Field</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.Field" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.Field.field_name">
+<code class="descname">field_name</code><a class="headerlink" href="#ui_builder.core.fields.Field.field_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.Field.field_value">
+<code class="descname">field_value</code><a class="headerlink" href="#ui_builder.core.fields.Field.field_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.Field.key">
+<code class="descname">key</code><a class="headerlink" href="#ui_builder.core.fields.Field.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.Field.required">
+<code class="descname">required</code><a class="headerlink" href="#ui_builder.core.fields.Field.required" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.Field.security_key">
+<code class="descname">security_key</code><a class="headerlink" href="#ui_builder.core.fields.Field.security_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.FloatField">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">FloatField</code><span class="sig-paren">(</span><em>name</em>, <em>required=True</em>, <em>default=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.FloatField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.IntegerField" title="ui_builder.core.fields.IntegerField"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.IntegerField</span></code></a></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.FloatField.field_value">
+<code class="descname">field_value</code><a class="headerlink" href="#ui_builder.core.fields.FloatField.field_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.IntegerField">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">IntegerField</code><span class="sig-paren">(</span><em>name</em>, <em>required=True</em>, <em>default=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.IntegerField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.Field" title="ui_builder.core.fields.Field"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.Field</span></code></a></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.IntegerField.field_value">
+<code class="descname">field_value</code><a class="headerlink" href="#ui_builder.core.fields.IntegerField.field_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.MultiSelectionList">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">MultiSelectionList</code><span class="sig-paren">(</span><em>name</em>, <em>required=True</em>, <em>default=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.Field" title="ui_builder.core.fields.Field"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.Field</span></code></a></p>
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.get_dict">
+<code class="descname">get_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.get_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.get_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.select">
+<code class="descname">select</code><span class="sig-paren">(</span><em>values=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.select_all">
+<code class="descname">select_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.select_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.select_indices">
+<code class="descname">select_indices</code><span class="sig-paren">(</span><em>indices=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.select_indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.MultiSelectionList.selected_indices">
+<code class="descname">selected_indices</code><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.selected_indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.MultiSelectionList.selected_values">
+<code class="descname">selected_values</code><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.selected_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.unselect">
+<code class="descname">unselect</code><span class="sig-paren">(</span><em>values=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.unselect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.unselect_all">
+<code class="descname">unselect_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.unselect_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.MultiSelectionList.unselect_indices">
+<code class="descname">unselect_indices</code><span class="sig-paren">(</span><em>indices=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.MultiSelectionList.unselect_indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.SingleSelectionList">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">SingleSelectionList</code><span class="sig-paren">(</span><em>name</em>, <em>required=True</em>, <em>default=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.SingleSelectionList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.Field" title="ui_builder.core.fields.Field"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.Field</span></code></a></p>
+<dl class="method">
+<dt id="ui_builder.core.fields.SingleSelectionList.get_list">
+<code class="descname">get_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.SingleSelectionList.get_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.fields.SingleSelectionList.select">
+<code class="descname">select</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.SingleSelectionList.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.SingleSelectionList.selected_index">
+<code class="descname">selected_index</code><a class="headerlink" href="#ui_builder.core.fields.SingleSelectionList.selected_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.SingleSelectionList.selected_value">
+<code class="descname">selected_value</code><a class="headerlink" href="#ui_builder.core.fields.SingleSelectionList.selected_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.fields.TextField">
+<em class="property">class </em><code class="descclassname">ui_builder.core.fields.</code><code class="descname">TextField</code><span class="sig-paren">(</span><em>name</em>, <em>max_length=500</em>, <em>required=True</em>, <em>default=''</em>, <em>rows=10</em>, <em>columns=50</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.fields.TextField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ui_builder.core.fields.CharField" title="ui_builder.core.fields.CharField"><code class="xref py py-class docutils literal"><span class="pre">ui_builder.core.fields.CharField</span></code></a></p>
+<dl class="attribute">
+<dt id="ui_builder.core.fields.TextField.MAX_COLUMNS">
+<code class="descname">MAX_COLUMNS</code><em class="property"> = 100</em><a class="headerlink" href="#ui_builder.core.fields.TextField.MAX_COLUMNS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.TextField.MAX_ROWS">
+<code class="descname">MAX_ROWS</code><em class="property"> = 100</em><a class="headerlink" href="#ui_builder.core.fields.TextField.MAX_ROWS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.TextField.columns">
+<code class="descname">columns</code><a class="headerlink" href="#ui_builder.core.fields.TextField.columns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.fields.TextField.rows">
+<code class="descname">rows</code><a class="headerlink" href="#ui_builder.core.fields.TextField.rows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.init_log">
+<span id="ui-builder-core-init-log-module"></span><h2>ui_builder.core.init_log module<a class="headerlink" href="#module-ui_builder.core.init_log" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="ui_builder.core.init_log.config_logs">
+<code class="descclassname">ui_builder.core.init_log.</code><code class="descname">config_logs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.init_log.config_logs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.utils">
+<span id="ui-builder-core-utils-module"></span><h2>ui_builder.core.utils module<a class="headerlink" href="#module-ui_builder.core.utils" title="Permalink to this headline">¶</a></h2>
+<p>Utility functions</p>
+<dl class="class">
+<dt id="ui_builder.core.utils.CheckedConfigParser">
+<em class="property">class </em><code class="descclassname">ui_builder.core.utils.</code><code class="descname">CheckedConfigParser</code><span class="sig-paren">(</span><em>defaults=None</em>, <em>dict_type=&lt;class 'collections.OrderedDict'&gt;</em>, <em>allow_no_value=False</em>, <em>*</em>, <em>delimiters=('='</em>, <em>':')</em>, <em>comment_prefixes=('#'</em>, <em>';')</em>, <em>inline_comment_prefixes=None</em>, <em>strict=True</em>, <em>empty_lines_in_values=True</em>, <em>default_section='DEFAULT'</em>, <em>interpolation=&lt;object object&gt;</em>, <em>converters=&lt;object object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.CheckedConfigParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">configparser.ConfigParser</span></code></p>
+<dl class="method">
+<dt id="ui_builder.core.utils.CheckedConfigParser.get_or_none">
+<code class="descname">get_or_none</code><span class="sig-paren">(</span><em>section</em>, <em>option</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.CheckedConfigParser.get_or_none" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_or_none.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Section:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Option:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.utils.FormattedStr">
+<em class="property">class </em><code class="descclassname">ui_builder.core.utils.</code><code class="descname">FormattedStr</code><a class="headerlink" href="#ui_builder.core.utils.FormattedStr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for FormattedStr.</p>
+<dl class="method">
+<dt id="ui_builder.core.utils.FormattedStr.format">
+<code class="descname">format</code><span class="sig-paren">(</span><em>label</em>, <em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.FormattedStr.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for format.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.utils.FormattedStr.get_str">
+<code class="descname">get_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.FormattedStr.get_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_str.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.utils.FormattedStr.print_str">
+<code class="descname">print_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.FormattedStr.print_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for print.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="ui_builder.core.utils.validate_file">
+<code class="descclassname">ui_builder.core.utils.</code><code class="descname">validate_file</code><span class="sig-paren">(</span><em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.utils.validate_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for validate_file.
+:file: TODO
+:returns: TODO</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ui_builder.core" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ui_builder</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ajeet Singh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/ui_builder.core.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,531 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ui_builder.core.provider package &#8212; ui_builder 0.0.5 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ui-builder-core-provider-package">
+<h1>ui_builder.core.provider package<a class="headerlink" href="#ui-builder-core-provider-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ui_builder.core.provider.commands">
+<span id="ui-builder-core-provider-commands-module"></span><h2>ui_builder.core.provider.commands module<a class="headerlink" href="#module-ui_builder.core.provider.commands" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ui_builder.core.provider.commands.Action">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.commands.</code><code class="descname">Action</code><span class="sig-paren">(</span><em>func</em>, <em>name=None</em>, <em>owner=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Action.</p>
+<dl class="attribute">
+<dt id="ui_builder.core.provider.commands.Action.callback">
+<code class="descname">callback</code><a class="headerlink" href="#ui_builder.core.provider.commands.Action.callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>The callback property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.Action.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Action.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for execute.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.commands.Command">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.commands.</code><code class="descname">Command</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Command.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.commands.CommandManager">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.commands.</code><code class="descname">CommandManager</code><span class="sig-paren">(</span><em>config_path</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for CommandManager.</p>
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.call">
+<code class="descname">call</code><span class="sig-paren">(</span><em>namespace</em>, <em>name</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.call" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for call.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Nam:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.commands.CommandManager.config_path">
+<code class="descname">config_path</code><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.config_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The config_path property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.get_command">
+<code class="descname">get_command</code><span class="sig-paren">(</span><em>namespace</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.get_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.commands.CommandManager.post_callback">
+<code class="descname">post_callback</code><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.post_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>The post_callback property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.commands.CommandManager.pre_callback">
+<code class="descname">pre_callback</code><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.pre_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>The pre_callback property.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.register_command">
+<code class="descname">register_command</code><span class="sig-paren">(</span><em>namespace</em>, <em>name</em>, <em>command</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.register_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for register_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.register_namespace">
+<code class="descname">register_namespace</code><span class="sig-paren">(</span><em>namespace</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.register_namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for register_namespace.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Namespace:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.unregister_command">
+<code class="descname">unregister_command</code><span class="sig-paren">(</span><em>namespace</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.unregister_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for unregister_command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Name:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.CommandManager.unregister_namespace">
+<code class="descname">unregister_namespace</code><span class="sig-paren">(</span><em>namespace</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.CommandManager.unregister_namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for unregister_namespace.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.commands.Event">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.commands.</code><code class="descname">Event</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for Event.</p>
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.Event.add_subscriber">
+<code class="descname">add_subscriber</code><span class="sig-paren">(</span><em>subscriber</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Event.add_subscriber" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for add_subscriber.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.Event.fire">
+<code class="descname">fire</code><span class="sig-paren">(</span><em>source</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Event.fire" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for fire.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arg1:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.commands.Event.remove_subscriber">
+<code class="descname">remove_subscriber</code><span class="sig-paren">(</span><em>subscriber</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.commands.Event.remove_subscriber" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for remove_subscriber.
+:returns: TODO</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.commands.EventArgs">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.commands.</code><code class="descname">EventArgs</code><a class="headerlink" href="#ui_builder.core.provider.commands.EventArgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for EventArgs.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.provider.id_mgr">
+<span id="ui-builder-core-provider-id-mgr-module"></span><h2>ui_builder.core.provider.id_mgr module<a class="headerlink" href="#module-ui_builder.core.provider.id_mgr" title="Permalink to this headline">¶</a></h2>
+<p>id.py
+Description:</p>
+<blockquote>
+<div>Manages UUID/GUID for whole application</div></blockquote>
+<dl class="docutils">
+<dt>Author:</dt>
+<dd>Ajeet Singh</dd>
+<dt>Date:</dt>
+<dd>2/4/2018</dd>
+</dl>
+<dl class="function">
+<dt id="ui_builder.core.provider.id_mgr.all_id">
+<code class="descclassname">ui_builder.core.provider.id_mgr.</code><code class="descname">all_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.id_mgr.all_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Arg1:</th><td class="field-body">TODO</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">TODO</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ui_builder.core.provider.id_mgr.find_id">
+<code class="descclassname">ui_builder.core.provider.id_mgr.</code><code class="descname">find_id</code><span class="sig-paren">(</span><em>obj_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.id_mgr.find_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_id.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ui_builder.core.provider.id_mgr.find_name">
+<code class="descclassname">ui_builder.core.provider.id_mgr.</code><code class="descname">find_name</code><span class="sig-paren">(</span><em>obj_id</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.id_mgr.find_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for find_name.
+:returns: TODO</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ui_builder.core.provider.id_mgr.get_id">
+<code class="descclassname">ui_builder.core.provider.id_mgr.</code><code class="descname">get_id</code><span class="sig-paren">(</span><em>obj_name</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.id_mgr.get_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>TODO: Docstring for get_id.
+:returns: TODO</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.provider.tasks">
+<span id="ui-builder-core-provider-tasks-module"></span><h2>ui_builder.core.provider.tasks module<a class="headerlink" href="#module-ui_builder.core.provider.tasks" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-tasks"></span><dl class="class">
+<dt id="ui_builder.core.provider.tasks.C">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.tasks.</code><code class="descname">C</code><a class="headerlink" href="#ui_builder.core.provider.tasks.C" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>C =&gt; Thread[C]ontroller - Contains condition and flag to pause/resume or stop an thread</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>tcond (Condition): An object of <code class="xref py py-class docutils literal"><span class="pre">Condition</span></code> to notify instance of <code class="xref py py-class docutils literal"><span class="pre">Thread</span></code>
+can_work (bool): Determines whether an thread can execute or should wait for the notification
+lock_coro_queue (Lock): An object of <code class="xref py py-class docutils literal"><span class="pre">Lock</span></code> to lock coroutine queues while adding/removing coroutines from queue
+lock_result_list (Lock): Used to lock the shared <strong>results</strong> list of an thread
+stop_event (Event): Stop event should be raised to stop an thread</dd>
+</dl>
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.can_work">
+<code class="descname">can_work</code><em class="property"> = True</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.can_work" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.lock_coro_queue">
+<code class="descname">lock_coro_queue</code><em class="property"> = &lt;unlocked _thread.lock object&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_coro_queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.lock_jobs_list">
+<code class="descname">lock_jobs_list</code><em class="property"> = &lt;unlocked _thread.lock object&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_jobs_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.lock_results_list">
+<code class="descname">lock_results_list</code><em class="property"> = &lt;unlocked _thread.lock object&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_results_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.stop_event">
+<code class="descname">stop_event</code><em class="property"> = &lt;threading.Event object&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.stop_event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.C.tcond">
+<code class="descname">tcond</code><em class="property"> = &lt;Condition(&lt;unlocked _thread.RLock object owner=0 count=0&gt;, 0)&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.tcond" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.tasks.HybridThread">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.tasks.</code><code class="descname">HybridThread</code><span class="sig-paren">(</span><em>name=None</em>, <em>args=()</em>, <em>kwargs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">threading.Thread</span></code></p>
+<p>HybridThread creates an dedicated thread for running async/coroutines on it.
+The thread keeps running until signalled to stop. It keeps checking for the
+coroutine queue and start executing same once an coroutine is added to queue.</p>
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.add_coroutine">
+<code class="descname">add_coroutine</code><span class="sig-paren">(</span><em>coroutine</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.add_coroutine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a coroutine to queue which will be scheduled and executed by thread’s event loop
+Args:</p>
+<blockquote>
+<div>coroutine (<code class="xref py py-obj docutils literal"><span class="pre">func</span></code>): The coroutine to be added in the queue
+<a href="#id1"><span class="problematic" id="id2">*</span></a>args: Paramters that needs to be passed to the coroutine
+<a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs: Keyword parameters for passing it to coroutine</div></blockquote>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>None</dd>
+<dt>Examples:</dt>
+<dd><p class="first">The parameters args and kwargs should be passed to this method as shown below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thread_instance</span> <span class="o">=</span> <span class="n">HybridThread</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;MyThread&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">async</span> <span class="k">def</span> <span class="nf">my_coro</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="go">        print(&#39;I am in coro&#39;)</span>
+<span class="go">        asyncio.sleep(2)</span>
+</pre></div>
+</div>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">thread_instance</span><span class="o">.</span><span class="n">add_coroutine</span><span class="p">(</span><span class="n">my_coro</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thread_instance</span><span class="o">.</span><span class="n">start</span><span class="p">();</span> <span class="n">thread_instance</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+<span class="go">I am in coro</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.HybridThread.coroutines">
+<code class="descname">coroutines</code><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="Permalink to this definition">¶</a></dt>
+<dd><p>All the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a> registered with this thread. This is a readonly property</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.HybridThread.is_paused">
+<code class="descname">is_paused</code><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.is_paused" title="Permalink to this definition">¶</a></dt>
+<dd><p>The is_paused property returns the status of the thread</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.HybridThread.loop">
+<code class="descname">loop</code><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>The asyncio <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.loop" title="ui_builder.core.provider.tasks.HybridThread.loop"><code class="xref py py-attr docutils literal"><span class="pre">loop</span></code></a> instance created for this thread only. This is a readonly property</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.pause">
+<code class="descname">pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.pause" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the <a class="reference internal" href="#ui_builder.core.provider.tasks.C.tcond" title="ui_builder.core.provider.tasks.C.tcond"><code class="xref py py-attr docutils literal"><span class="pre">C.tcond</span></code></a> property of thread to pause it</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.HybridThread.results">
+<code class="descname">results</code><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains result from all the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a> in this thread</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.resume">
+<code class="descname">resume</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.resume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the <a class="reference internal" href="#ui_builder.core.provider.tasks.C.tcond" title="ui_builder.core.provider.tasks.C.tcond"><code class="xref py py-attr docutils literal"><span class="pre">C.tcond</span></code></a> property of thread to resume it</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.run" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Executes the main <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.run" title="ui_builder.core.provider.tasks.HybridThread.run"><code class="xref py py-meth docutils literal"><span class="pre">run()</span></code></a> method of the class <code class="xref py py-class docutils literal"><span class="pre">Thread</span></code>.</dt>
+<dd>This method will create a new event <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.loop" title="ui_builder.core.provider.tasks.HybridThread.loop"><code class="xref py py-attr docutils literal"><span class="pre">loop</span></code></a> for this thread,
+schedule all the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a> to run and waits for the
+completion of the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a></dd>
+<dt>Args:</dt>
+<dd>None</dd>
+<dt>Returns:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.schedule_jobs">
+<code class="descname">schedule_jobs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.schedule_jobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Schedule all coroutines/jobs which are available in the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a>
+Returns:</p>
+<blockquote>
+<div>None</div></blockquote>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ui_builder.core.provider.tasks.HybridThread.scheduler">
+<code class="descname">scheduler</code><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.scheduler" title="Permalink to this definition">¶</a></dt>
+<dd><p>An <code class="xref py py-mod docutils literal"><span class="pre">aiojobs</span></code>.:class:<cite>Scheduler</cite> instance to schedule coroutines</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.scheduler_exception_handler">
+<code class="descname">scheduler_exception_handler</code><span class="sig-paren">(</span><em>scheduler</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.scheduler_exception_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles exception raised by any of the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.coroutines" title="ui_builder.core.provider.tasks.HybridThread.coroutines"><code class="xref py py-attr docutils literal"><span class="pre">coroutines</span></code></a> registered with the <a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.scheduler" title="ui_builder.core.provider.tasks.HybridThread.scheduler"><code class="xref py py-attr docutils literal"><span class="pre">scheduler</span></code></a>
+Args:</p>
+<blockquote>
+<div><p>scheduler (scheduler): Instance of the scheduler raising the exception
+context (dict): A dictionary containing following attributes:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>* :attr:`message`
+* :attr:`job`
+* :attr:`exception`
+* :attr:`source_traceback`
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="ui_builder.core.provider.tasks.HybridThread.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui_builder.core.provider.tasks.HybridThread.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop the current thread and it’s coroutines</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ui_builder.core.provider.tasks.ThreadManager">
+<em class="property">class </em><code class="descclassname">ui_builder.core.provider.tasks.</code><code class="descname">ThreadManager</code><a class="headerlink" href="#ui_builder.core.provider.tasks.ThreadManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Docstring for ThreadManager.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ui_builder.core.provider">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ui_builder.core.provider" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ui_builder</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ajeet Singh.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/ui_builder.core.provider.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
