@@ -23,7 +23,7 @@
 		}
 	},
 	"loggers": {
-		"packages": {
+		"tasks": {
 			"handlers": ["file_handler", "console"],
 			"level": "DEBUG",
 			"propagate": "True"
