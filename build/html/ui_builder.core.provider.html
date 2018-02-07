@@ -23,6 +23,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ui_builder.core.tests package" href="ui_builder.core.tests.html" />
+    <link rel="prev" title="ui_builder.core.parser package" href="ui_builder.core.parser.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -295,8 +297,8 @@
 </dd></dl>
 
 <dl class="attribute">
-<dt id="ui_builder.core.provider.tasks.C.lock_result_list">
-<code class="descname">lock_result_list</code><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_result_list" title="Permalink to this definition">¶</a></dt>
+<dt id="ui_builder.core.provider.tasks.C.lock_results_list">
+<code class="descname">lock_results_list</code><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_results_list" title="Permalink to this definition">¶</a></dt>
 <dd><p><em>Lock</em> – Used to lock the shared <strong>results</strong> list of an thread.</p>
 </dd></dl>
 
@@ -322,8 +324,8 @@
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="ui_builder.core.provider.tasks.C.lock_results_list">
-<code class="descname">lock_results_list</code><em class="property"> = &lt;unlocked _thread.lock object&gt;</em><a class="headerlink" href="#ui_builder.core.provider.tasks.C.lock_results_list" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="descname">lock_results_list</code><em class="property"> = &lt;unlocked _thread.lock object&gt;</em></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -462,12 +464,12 @@ coroutine queue and start executing same once an coroutine is added to queue.</p
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>scheduler</strong> (<a class="reference internal" href="#ui_builder.core.provider.tasks.HybridThread.scheduler" title="ui_builder.core.provider.tasks.HybridThread.scheduler"><em>scheduler</em></a>) – Instance of the scheduler raising the exception</li>
 <li><strong>context</strong> (<em>dict</em>) – <p>A dictionary containing following attributes:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>{
-    * :attr:`message`
-    * :attr:`job`
-    * :attr:`exception`
-    * :attr:`source_traceback`
-}
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="n">message</span>
+    <span class="n">job</span>
+    <span class="n">exception</span>
+    <span class="n">source_traceback</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </li>
@@ -518,11 +520,26 @@ coroutine queue and start executing same once an coroutine is added to queue.</p
 
 
 <h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">frameworks</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ui_builder.html">ui_builder package</a></li>
+</ul>
+</li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">frameworks</a><ul>
+  <li><a href="ui_builder.html">ui_builder package</a><ul>
+  <li><a href="ui_builder.core.html">ui_builder.core package</a><ul>
+      <li>Previous: <a href="ui_builder.core.parser.html" title="previous chapter">ui_builder.core.parser package</a></li>
+      <li>Next: <a href="ui_builder.core.tests.html" title="next chapter">ui_builder.core.tests package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
@@ -544,7 +561,7 @@ coroutine queue and start executing same once an coroutine is added to queue.</p
       &copy;2018, Ajeet Singh.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
